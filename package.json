@@ -6,6 +6,7 @@
     "start": "npm run build-css && concurrently --kill-others \"budo --dir public/ --live\" \"npm run sass-watch\"",
     "build-css": "node-sass --output-style=compressed src/style/main.scss > public/style.css",
     "sass-watch": "node-sass --watch src/style/main.scss --source-map-embed public/style.css",
+    "deploy": "npm run build-css && surge public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nick Thomas <nichoth@gmail.com>",
@@ -23,6 +24,7 @@
     "budo": "^11.6.3",
     "concurrently": "^5.1.0",
     "ecstatic": "^4.1.2",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "surge": "^0.21.3"
   }
 }
