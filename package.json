@@ -23,7 +23,7 @@
   "devDependencies": {
     "budo": "^11.6.3",
     "concurrently": "^5.1.0",
-    "ecstatic": "^4.1.2",
+    "ecstatic": "^4.1.4",
     "node-sass": "^4.13.1",
     "surge": "^0.21.3"
   }
